@@ -31,7 +31,7 @@
 # Ignore bootstrap node modules #
 #################################
 src/public/css/bootstrap/node_modules/
-src/server/log/
+src/public/img/Thumbs.db
 LibreICONS-master/
-src/public/img/Thumbs.db
-src/public/img/Thumbs.db
+log/
+
