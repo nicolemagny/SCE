@@ -24,52 +24,49 @@
 
 'use strict'
 
-var mysql   = require('mysql');
+var mysql = require('mysql')
 
 // SCE
-var utils = require('./server_utils.js');
+var utils = require('./server_utils.js')
 
 /**
  * Pool de conexões para o banco de dados
  */
 var pool = mysql.createPool({
-    connectionLimit   : 100, // Máximo número de conexões permitidas.
-    host              : "localhost",
-    user              : "sce",
-    password          : "sce_password",
-    database          : "sce",
-    debugging         : false
-});
+  connectionLimit: 100, // Máximo número de conexões permitidas.
+  host: 'localhost',
+  user: 'sce',
+  password: 'sce_password',
+  database: 'sce',
+  debugging: false
+})
 
 /**
  * @param query_data a query a ser executada no banco de dados.
  * @param {Function} callback chamado ao finalizar a query.
  */
-exports.query = function(query_data, callback_return) {
-    pool.getConnection(function(err, connection) {
-        if(err) {
-            callback_return(undefined, err)
-            utils.write_log('Um erro ocorreu ao tentar conectar ao servidor. Erro: ' + err, '904')
+exports.query = function (query_data, callback_return) {
+  pool.getConnection(function (err, connection) {
+    if (err) {
+      callback_return(undefined, err)
+      utils.writeLog('Um erro ocorreu ao tentar conectar ao banco de dados. Erro: ' + err, '904')
+    } else { // conexão ok
+      connection.query(query_data, function (err, rows) {
+        if (err) {
+          callback_return(undefined, err)
+        } else {
+          if (rows == '') {
+            callback_return(undefined, 'Nenhum resultado foi encontrado.')
+          } else {
+            callback_return(rows, undefined)
+          }
         }
-        else { // conexão ok
-            connection.query(query_data, function(err, rows) {
-                if(err) {
-                    callback_return(undefined, err);
-                  }
-                else {
-                    if(rows == "") {
-                        callback_return(undefined, "Nenhum resultado foi encontrado.");
-                    }
-                    else {
-                        callback_return(rows, undefined);
-                    }
-                }
-            });
-        }
+      })
+    }
 
-        // Does connection pooling rightly.
-        if(connection) {
-            connection.release();
-        }
-    });
+    // Does connection pooling rightly.
+    if (connection) {
+      connection.release()
+    }
+  })
 }
