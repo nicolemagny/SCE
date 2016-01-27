@@ -2,8 +2,8 @@
 
 ![Estado dos testes](https://travis-ci.org/rafaelcn/SCE.svg?branch=master)
 
- *__NOTE: This is my first web application using features like NodeJS, Websockets and other things like it, so bear with me.__*
- *I'm aware of Promises, but they would take to long to rewrite the entire application__*
+ *__NOTE: This is my first web application using features like NodeJS, Websockets and other things like it, so bear with me.
+ I'm aware of Promises, but they would take to long to rewrite the entire application.__*
  
 ## O que é?
 

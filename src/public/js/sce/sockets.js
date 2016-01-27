@@ -32,7 +32,7 @@
     return new WebSocket('ws://' + window.location.hostname + ':' + ws_port)
   }
 
-  ws = window.bootWebSockets()
+  ws = window.bootWebSocket()
 
   if (ws != null) {
     sockets = true
