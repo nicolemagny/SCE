@@ -27,26 +27,26 @@ document.body.ondragstart = false
 if (typeof jQuery === 'undefined') {
   throw new Error('base.js need jQuery in order to some functions work.')
 } else {
-  // Um pouco de falso positivo aqui.
-  var bootstrap = (typeof $().popover == 'function')
+  $(document).ready(function () {
+    // Um pouco de falso positivo aqui.
+    var bootstrap = (typeof $().popover == 'function')
 
-  if(bootstrap === 'undefined' || bootstrap) {
-    $(function () {
-      $('[data-toggle="popover"]').popover()
-    })
+    if (bootstrap === 'undefined' || bootstrap) {
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
 
-    // Inicializando o componente tooltip.
-    $(function () {
-    		$('[data-toggle="tooltip"]').tooltip()
-    })
+      // Inicializando o componente tooltip.
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
 
-    // thanks http://goo.gl/WJj13H
-    $('body').tooltip({
-      selector: '[data-toggle=tooltip]'
-    })
-  }
+      // thanks http://goo.gl/WJj13H
+      $('body').tooltip({
+        selector: '[data-toggle=tooltip]'
+      })
+    }
 
-  $(document).ready(function() {
     // Eventos em botões desabilitados não irão disparar.
     $('.disabled').click(function (ev) {
       ev.preventDefault()
@@ -63,7 +63,7 @@ if (typeof jQuery === 'undefined') {
 }
 
 /**
- * Função para "setar" o valor a um elemento com uma ID específica
+ * Método para "setar" o valor a um elemento com uma ID específica
  * @param elementID O id do elemento a ser buscado.
  * @param value O novo valor que o elemento vai assumir.
  */
@@ -73,15 +73,5 @@ window.setElementValue = function (elementID, value) {
     console.error('O elemento ' + elementID + ' procurado não foi encontrado.')
   } else {
     elemento.value = value
-  }
-}
-
-window.reconectar = function () {
-  if (window.ws.readyState === 3) {
-    for (var i = 0; i < 3; i++) {
-      if (window.ws.readyState === 3) {
-        window.ws = window.bootWebSocket()
-      }
-    }
   }
 }

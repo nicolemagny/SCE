@@ -44,3 +44,16 @@
   window.sockets = sockets
   window.ws_port = ws_port
 })()
+
+/**
+ * Método para tentar se conectar ao servidor do SCE.
+ */
+window.reconectar = function () {
+  if (window.ws.readyState === 3) {
+    for (var i = 0; i < 3; i++) {
+      if (window.ws.readyState === 3) {
+        window.ws = window.bootWebSocket()
+      }
+    }
+  }
+}

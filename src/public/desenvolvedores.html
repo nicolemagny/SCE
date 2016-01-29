@@ -18,32 +18,31 @@
   <link rel="stylesheet" type="text/css" href="css/sce/sce.css">
 </head>
 
-<body ondragstart="false">
-  <!-- <img class="back_img" src="img/calc-background3.1.jpg"> -->
-  <header class="">
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-            <img src="" alt="SCE" class="img-responsive"/>
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav text-right">
-            <li><a href="/">Início</a></li>
-            <li class="active"><a href="#">Desenvolvedores</a></li>
-            <li><a href="ajuda.html">Ajuda</a></li>
-            <li><a href="javascript:window.history.back();">Voltar à página anterior</a></li>
-          </ul>
-        </div>
-    </nav>
-  </header>
+<body>
   <div class="container-fluid">
+    <header class="row">
+      <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="img/sce_logo.png" alt="SCE - Sistema de Controle de Estágio"/>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+            <ul class="nav navbar-nav text-right">
+              <li><a href="/">Início</a></li>
+              <li class="active"><a href="#">Desenvolvedores</a></li>
+              <li><a href="ajuda.html">Ajuda</a></li>
+              <li><a href="javascript:window.history.back();">Voltar à página anterior</a></li>
+            </ul>
+          </div>
+      </nav>
+    </header>
     <section class="row">
       <article class="col-md-12">
           <div class="jumbotron dev-background">
@@ -56,84 +55,80 @@
           <ul class="list-inline text-center">
             <li>
               <div class="panel panel-profile">
-                <div style="background-image: url(img/canada3.jpg)" class="panel-header" />
+                <div class="panel-header">
+                  <img src="img/iceland.jpg" class="img-responsive" />
                 </div>
                 <div class="panel-body text-center">
-                  <img src="img/dev_pic/rafael.jpg" class="panel-profile-img img-medium" alt=""/>
+                  <img src="img/developers/rafael.jpg" class="panel-profile-img img-medium" alt=""/>
                   <p>
                       <strong>Rafael Campos Nunes</strong>
-                      <h4>Designer. Front-end e Back-end.</h4>
                   </p>
-                  <hr>
                   <p>
-                    <button class="btn sce-btn-secondary" name="button">Github <i class="libre libre-github"></i></button>
-                    <button class="btn sce-btn-secondary" name="button">Blog <i class="libre libre-github"></i></button>
+                    Designer. Front-end e Back-end.
                   </p>
                 </div>
               </div>
             </li>
-
             <li>
               <div class="panel panel-profile">
-                <div style="background-image: url(img/code/db_model.png)" class="panel-header" />
+                <div class="panel-header">
+                  <img src="img/" class="img-responsive" />
                 </div>
                 <div class="panel-body text-center">
-                  <img src="img/dev_pic/gabriel.jpg" class="panel-profile-img img-medium" alt="" />
+                  <img src="img/developers/gabriel.jpg" class="panel-profile-img img-medium" alt="" />
                   <p>
-                      <strong>Márcio Gabriel</strong>
-                      <h4>Banco de dados.</h4>
+                    <strong>Márcio Gabriel</strong>
                   </p>
-                  <hr>
-                  <p class="">
-                    <button class="btn sce-btn-secondary" name="button">Github <i class="libre libre-github"></i></button>
-                    <button class="btn sce-btn-secondary" name="button">Blog <i class="libre libre-github"></i></button>
+                  <p>
+                    Banco de dados.
                   </p>
                 </div>
               </div>
             </li>
-
             <li>
               <div class="panel panel-profile">
-                <div style="background-image: url(img/calc-background3.1.jpg)" class="panel-header" />
+                <div class="panel-header">
+                 <img src="img/" class="img-responsive">
                 </div>
                 <div class="panel-body text-center">
-                  <img src="img/dev_pic/nicole.jpg" class="panel-profile-img img-medium" alt="" />
+                  <img src="img/developers/nicole.jpg" class="panel-profile-img img-medium" alt="" />
                   <p>
-                      <strong>Nicole Magny</strong>
-                      <h4>Desenvolveu o front-end do SCE.</h4>
+                    <strong>Nicole Magny</strong>
                   </p>
-                  <hr>
                   <p>
-                    <button class="btn sce-btn-secondary" name="button">Github <i class="libre libre-github"></i></button>
-                    <button class="btn sce-btn-secondary" name="button">Blog <i class="libre libre-github"></i></button>
+                    Front-end.
                   </p>
                 </div>
               </div>
             </li>
-
             <li>
               <div class="panel panel-profile">
-                <div style="background-image: url(img/calc-background3.1.jpg)" class="panel-header" />
+                <div class="panel-header">
+                 <img src="img/" class="img-responsive">
                 </div>
                 <div class="panel-body text-center">
-                  <img src="img/dev_pic/profile.jpg" class="panel-profile-img img-medium" alt="" />
+                  <img src="img/developers/isabela.jpg" class="panel-profile-img img-medium" alt="" />
                   <p>
-                      <strong>Isabela Brito</strong>
-                      <h4>.</h4>
+                    <strong>Isabela Brito</strong>
+                  </p>
+                  <p>
+                    Designer e Front-end.
                   </p>
                 </div>
               </div>
             </li>
-
             <li>
               <div class="panel panel-profile">
-                <div style="background-image: url(img/calc-background3.1.jpg)" class="panel-header" />
+                <div class="panel-header">
+                 <img src="img/" class="img-responsive">
                 </div>
                 <div class="panel-body text-center">
-                  <img src="img/dev_pic/profile.jpg" class="panel-profile-img img-medium" alt="" />
+                  <img src="img/developers/tatyane.jpg" class="panel-profile-img img-medium" alt="" />
                   <p>
-                      <strong>Tatyane Bianchi</strong>
-                      <h4>Escreveu a seção de <i> <a href="#">ajuda</a></i>.</h4>
+                    <strong>Tatyane Bianchi</strong>
+                  </p>
+                  <p>
+                    Front-end.
                   </p>
                 </div>
               </div>

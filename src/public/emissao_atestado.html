@@ -26,13 +26,9 @@
 			<nav class="navbar navbar-default">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="/">
-            <img src="img/" alt="SCE - Sistema de Controle de Estágio" class="img-responsive"/>
+            <img src="img/sce_logo.png" alt="SCE - Sistema de Controle de Estágio"/>
           </a>
 				</div>
-
-        <!-- <ul class="nav navbar-nav" style="float: right !important;">
-					<li><a href="/logout">Sair <i class="libre libre-log-out"></i></a></li>
-        </ul> -->
 			</nav>
 		</header>
 
@@ -61,24 +57,42 @@
 
 		<section class="col-md-7 col-md-offset-1">
 			<article class="row">
-				<h4 class="title-1">Emissão de atestado de estágio</h4>
+				<h4 class="title-1">
+          Emissão de atestado de estágio
+          <a tabindex="0" role="button" style="float:right;" class="tool-info" data-toggle="popover" data-placement="left" title="Página de emissão de atestado"
+            data-content="Nessa página é possível emitir o atestado do estagiário. Para mais informações siga a página de ajuda." data-trigger="focus">
+            <i  class="libre libre-question"></i>
+          </a>
+        </h4>
 
 				<h4>Pesquise o nome do estagiário para emissão do certificado.</h4>
 				<div class="input-group input-group-md">
 					<input type="text" class="form-control" placeholder="Exemplo: Nicole Lima Magny ou somente Nicole." id="campo_estagiario">
-					<span class="input-group-btn">
-						<div class="dropdown">
-							<button class="btn sce-btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="botao_pesquisa">
-								Pesquisar por
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-								<li><a id="pesquisa_por_nome" href="pesquisa_por_nome">Nome</a></li>
-								<li><a id="pesquisa_por_matricula" href="pesquisa_por_matricula">Matrícula</a></li>
-							</ul>
-						</div>
-					</span>
+					
+          <span class="input-group-btn">
+            <div class="dropdown">
+              <button class="btn sce-btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="botao_pesquisa">
+                Pesquisar por
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                <li><a id="pesquisa_por_nome" class="sce-dropdown-btn" href="pesquisa_por_nome">Nome</a></li>
+                <li><a id="pesquisa_por_matricula" class="sce-dropdown-btn" href="pesquisa_por_matricula">Matrícula</a></li>
+              </ul>
+            </div>
+          </span>
 			</article>
+      
+      <article class="row">
+        <div class="margin-top">
+          <p class="sce-hide sce-alert sce-alert-danger" data-toggle="tooltip" data-container="body" data-placement="top" title="Clique para fechar o alerta" id="error_box">
+					</p>
+
+					<!--  Tabela de estagiários -->
+					<table class="sce-hide table table-striped table-bordered" id="resultado_pesquisa">
+					</table>
+        </div>
+      </article>
 		</section>
 
 		<footer class="row margin-top">
@@ -88,5 +102,9 @@
 
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/sce/base.js"></script>
+  <script src="js/sce/sockets.js"></script>
+  <script src="js/sce/notification.js"></script>
+  <script src="js/sce/pesquisa_estagiario.js"></script>
 </body>
 </html>
