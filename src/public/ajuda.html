@@ -3,10 +3,10 @@
 <head>
   <title>SCE - Ajuda</title>
   <meta charset="utf-8">
-  
+
   <!-- mobile stuff -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
@@ -56,8 +56,12 @@
           <li><a href="#title-5">Remoção de estagiário</a></li>
           <li><a href="#title-6">Emitir atestado de estágio</a></li>
           <li><a href="#title-7">Empresas Conveniadas</a></li>
-          <li><a href="#title-8">Erros da aplicação</a></li>
-          <li><a href="#title-9">Erro 404</a></li>
+          <li><a href="#title-8">Turmas</a></li>
+          <li><a href="#title-9">Orientadores</a></li>
+          <li><a href="#title-10">Usuários</a></li>
+          <li><a href="#title-11">Estado do sistema</a></li>
+          <li><a href="#title-12">Erros da aplicação</a></li>
+          <li><a href="#title-13">Erro 404</a></li>
         </ul>
       </article>
 
@@ -89,10 +93,10 @@
               <li><i class="libre-li libre libre-browser-safari"></i>Safari (versões superiores a 5.1.7)
             </ul>
 
-            <blockquote class="quote quote-danger" style="font-size: 16px;">
+            <blockquote class="quote quote-danger" style="font-size: 12px;">
               <b> O aplicativo não funciona corretamente utilizando Internet Explorer abaixo da versão. 11 </b>
             </blockquote>
-            <blockquote class="quote quote-danger" style="font-size: 16px;">
+            <blockquote class="quote quote-danger" style="font-size: 12px;">
               <b> O aplicativo não funciona corretamente utilizando a versão 5.1.7 do navegador Safari. </b>
             </blockquote>
           </div>
@@ -103,10 +107,10 @@
           <div class="help-content">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           </div>
         </div>
@@ -115,11 +119,11 @@
           <h3 class="help-title"> Por dentro da aplicação!</h3>
           <div class="help-content">
           <p>
-            Este é um sistema voltado ao controle de estágios, a princípio foi projetado para ser utilizado no Instituto Federal de Educação,
-          Ciência e Tecnologia do Pará- Campus Tucuruí, a fim de possibilitar o gerenciamento do cadastro de cada estagiário, classificando-os
-          por turma ou por empresa conveniada, também é possível emitir o atestado de conclusão, portanto, por meio desta aplicação de fácil
-          utilização é possível verificar quais alunos fazem estágio e emitir uma declaração de conclusão. É possível verificar as informações
-          básicas e incluir observações sobre os estagiários e das empresas.
+            Este é um sistema voltado ao controle de estágios, a princípio foi projetado para ser utilizado no setor de Estágio do Instituto Federal de Educação,
+        Ciência e Tecnologia do Pará- Campus Tucuruí. A fim de proporcionar organização no gerenciamento dos registros é possível realizar: cadastro de estagiário,
+        de empresas conveniadas, de turmas e orientadores; também é possível remove-los. Desta forma, classificando-os por turma ou por empresa conveniada, também
+        é possível emitir o atestado de conclusão, portanto, por meio desta aplicação de fácil utilização é possível verificar quais alunos fazem estágio
+        e emitir uma declaração de conclusão. É possível verificar as informações básicas e incluir observações sobre os estagiários e empresas.
         </p>
         </div>
         </div>
@@ -128,24 +132,29 @@
           <h3 class="help-title"> Cadastro de estagiário </h3>
           <div class="help-content">
           <p>
-            Para realizar o cadastro de um estagiário é necessário que a empresa na qual estagiário trabalha seja conveniada, ou seja, é necessário
-          que ela esteja cadastrada no sistema. Os dados requisitados são:
+            Para realizar o cadastro de um estagiário é necessário que a empresa e a turma sejam conveniadas, ou seja, é necessário
+        que estejam cadastrada no sistema. Os dados requisitados são:
           </p>
           <ul>
-            <li> Nome
-            <li> Matricula
-            <li> Turma
-            <li> Turno
-            <li> Empresa
-            <li> Orientador
-            <li> Período de estágio
+            <li> Nome;
+            <li> Matricula;
+            <li> Turma;
+            <li> Turno;
+            <li> Empresa;
+            <li> Orientador;
+            <li> Período de estágio:
+              <ul>
+                <li> Início;
+                <li> Fim;
+                <li> Observações;
+              </ul>
           </ul>
           <p>
-            A interface é fácil de ser utilizada, é possível escolher o turno (vespertino, matutino, diurno e noturno), a empresa, o orientador
+            A interface é fácil de ser utilizada, é possível escolher o turno (vespertino ou matutino), a empresa, o orientador
             e a turma. Vale ressaltar que esses ítens são previamente cadastrados no sistema, na aba configurações. Ao término do cadastro basta concluir
             clicando no botão "cadastrar", como está demonstrado na imagem a seguir.
           </p>
-         <img src="" alt="Cadastro de estagiário" class="" width="" height="">
+        <img src="img/cadastrar_estagiario.png" alt="Cadastro de estagiário" class="" width="" height="">
         </div>
         </div>
 
@@ -153,8 +162,10 @@
           <h3 class="help-title">Remoção de estagiário</h3>
           <div class="help-content">
           <p>
-            Para remover um estagiário cadastrado é simples, basta pesquisar o nome do estagiário a ser removido na caixa de pesquisa
-          que fica localizada abaixo. A imagem a seguir demonstra como é possível localizar um estagiário para removê-lo.
+            Para remover um estagiário cadastrado é simples, basta realizar uma pesquisar por nome ou matricula do estagiário, após a consulta,
+            ao selecionarmos um usuário, é possível escolher umas das seguintes opções: “ Editar informações do cadastro”, “Ver informações do
+            cadastro” e “Excluir cadastro”. A imagem a seguir é possível visualizar a caixa de pesquisa, o botão “ Pesquisar por” e as opções
+            “ Nome ” e “ Matricula”.
         </p>
           <img src="" alt="Remoção de estagiário" class="" width="" height="">
         </div>
@@ -178,35 +189,107 @@
           <h3 class="help-title">Empresas Conveniadas</h3><br>
           <div class="help-content">
           <p>
-            Para cadastrar um estagiário é obrigatório inserir em qual empresa o mesmo atua, portanto, na opção
-          “Empresas conveniadas” encontram-se as empresas conveniadas ao IFPA assim como uma forma de cadastrar
-          uma nova empresa. As informações requisitadas para o cadastro de uma nova empresa são:
+          Para cadastrar um estagiário é obrigatório inserir em qual empresa o mesmo atua, portanto, na opção “Empresas conveniadas”
+          encontram-se uma lista das empresas conveniadas ao IFPA, ao selecionar uma das empresas, podemos escolher as seguintes opções:
+          “ Editar informações da empresa”, “Ver informações da empresa” e “Excluir empresa”.
+          Além disso, no canto superior esquerdo há o botão “Cadastrar nova empresa”. As informações requisitadas para o cadastro de uma nova empresa são:
+
           <ul> <br>
             <li> Informações básicas <br>
   	          <ul>
-  	            <li> Nome da empresa
-  	            <li> Razão social da empresa
-  	            <li> Cadastro Nacional da Pessoa Jurídica -CNPJ
+  	            <li> Nome da empresa;
+  	            <li> Razão social da empresa;
+  	            <li> Cadastro Nacional da Pessoa Jurídica -CNPJ;
               </ul> <br>
             <li> Endereço <br>
               <ul>
-                <li> Nome da rua
-                <li> Número
-                <li> CEP
-                <li> Bairro
+                <li> Nome da rua;
+                <li> Número;
+                <li> CEP;
+                <li> Bairro;
               </ul> <br>
             <li> Contato <br>
               <ul>
-                <li> E-mail
-                <li> Telefones
+                <li> E-mail;
+                <li> Telefones;
               </ul>
           </ul>
         <img src="" alt="Empresas conveniadas" class="" width="" height="">
         </div>
       </div>
 
-
         <div id="title-8">
+        <h3 class="help-title">Turmas</h3><br>
+        <div class="help-content">
+          <p>
+        Para realizar o cadastro de um estagiário é necessário inserir a qual turma o mesmo pertence, portanto, na opção “Turmas” encontram-se
+        uma caixa de pesquisa, desta forma é possível localizar uma turma, verificando suas informações. Além disso, ao selecionar uma das turmas
+        temos as seguintes opções: “ Editar informações da turma”, “Ver informações da turma” e “Excluir turma”.
+        É possível visualizar na imagem seguinte que abaixo da caixa de pesquisa apresentamos o botão “ Cadastrar nova turma”, as informações
+        requeridas para realizar este cadastro são:
+
+        <ul>
+          <li> Informações da turma
+            <ul>
+              <li> Código da turma;
+              <li> Nome do curso;
+              <li> Turno de estudo da turma:
+                  <ul>
+                    <li> Matutino;
+                    <li> Vespertino;
+                    <li> Noturno;
+                  </ul>
+            </ul>
+        </ul>
+            <img src="" alt="Turmas" class="" width="" height="">
+          <p>
+        </div>
+      </div>
+      <div id="title-9">
+        <h3 class="help-title">Orientadores</h3><br>
+        <div class="help-content">
+          <p>
+            Para realizar o cadastro de um estagiário, outra informação obrigatória é do Orientador, portanto, na opção “ Orientadores”
+            encontram-se uma caixa de pesquisa, desta forma é possível localizar um dos orientadores, ressaltando que a pesquisa pode
+            ser feita através do “Nome” ou “SIAP” do orientador. Ao selecionarmos um orientador, podemos escolher uma das seguintes opções:
+            “ Editar informações do orientador”, “Ver informações do orientador” e “Excluir orientador”.
+            Além disso, podemos “Cadastrar orientador”. As informações requisitadas para o cadastro de um orientador são:
+            <ul>
+              <li> Informações do orientador
+                <ul>
+                  <li> Nome completo do orientador;
+                  <li> SIAP do orientador;
+                </ul>
+            </ul>
+          <p>
+        </div>
+      </div>
+      <div id="title-10">
+        <h3 class="help-title">Usuários</h3><br>
+        <div class="help-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+        </div>
+      </div>
+      <div id="title-11">
+        <h3 class="help-title">Estado do sistema</h3><br>
+        <div class="help-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+        </div>
+      </div>
+
+        <div id="title-12">
           <h3 class="help-title">Erros de aplicação</h3><br>
           <div class="help-content">
             <p>
@@ -219,7 +302,7 @@
           </div>
         </div>
 
-        <div id="title-9">
+        <div id="title-13">
           <h3 class="help-title">Erro 404</h3>
           <div class="help-content">
             <p>
